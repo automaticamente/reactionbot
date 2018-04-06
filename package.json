@@ -6,11 +6,21 @@
   "scripts": {
     "run": "babel-node ."
   },
+  "prettier": {
+    "singleQuote": true,
+    "jsxBracketSameLine": true
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "dotenv": "^5.0.1",
+    "lodash": "^4.17.5",
+    "stream-to-array": "^2.3.0"
   }
 }
