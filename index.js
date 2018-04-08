@@ -31,8 +31,12 @@ function buildMedia() {
 
     writeFileSync('./tmp/out.gif', gifBuffer.data);
 
+    const q = quotes.filter(q => q.quote.length < 150);
+
+    console.log(q.length);
+
     const quote = await writer(
-      sample(quotes.filter(q => q.quote.length < 150))
+      sample(q)
     );
 
     writeFileSync('./tmp/quote.png', quote);
