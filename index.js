@@ -52,7 +52,7 @@ async function generateTweet() {
     await buildMedia();
 
     const tweetID = await t.tweetVideo(
-      chosenQuote.quote,
+      `LOL. ${chosenQuote.quote}`,
       join(__dirname, 'tmp/result.mp4')
     );
 

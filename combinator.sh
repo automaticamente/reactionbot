@@ -7,4 +7,4 @@ null: -insert 1 -layers composite -bordercolor white -border 30 -loop 0 tmp/resu
 
 #convert gif to mp4 because size
 ffmpeg -loglevel panic -y -i tmp/result.gif -movflags faststart -pix_fmt yuv420p \
--vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" tmp/result.mp4
+-vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" -r 25 tmp/result.mp4
