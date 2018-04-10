@@ -1,4 +1,6 @@
 node_modules
 /out.jpg
 /.env
-/tmp
+/tmp/*
+!/tmp/.keep
+.DS_Store

@@ -1,0 +1,7 @@
+version: "3"
+services:
+  bot:
+    #restart: on-failure
+    build: .
+    volumes:
+      - ./tmp:/bot/tmp
