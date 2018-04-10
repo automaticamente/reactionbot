@@ -58,7 +58,7 @@ async function generateTweet() {
 
     process.stdout.write(`
       done!
-      Text: LOL. ${chosenQuote.quote}
+      Text: ${chosenQuote.quote}
       Link: https://twitter.com/${
         process.env['BOT_TWITTER_USER']
       }/status/${tweetID}\n
