@@ -65,6 +65,7 @@ async function generateTweet() {
       `);
   } catch (e) {
     console.error(e);
+    generateTweet();
   }
 }
 
